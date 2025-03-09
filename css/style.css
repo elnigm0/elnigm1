@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+.prices {
+    font-family: 'Cairo', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi", serif; 
+    font-optical-sizing: auto; 
+    font-weight: <weight>; 
+    font-style: normal; 
+    font-weight: 400;
+    font-variation-settings:"slnt" 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color:#111 ;
+}
+.logo img{
+    width: 110px;
+    height: 80px;
+}
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/*navigation */
+.navigation {
+  display: flex;
+  overflow-x: auto; /* تفعيل التمرير الأفقي */
+  white-space: nowrap; /* منع العناصر من الانتقال إلى السطر التالي */
+  padding: 10px 0;
+  scrollbar-width: thin; /* لتقليل عرض شريط التمرير */
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  flex-shrink: 0; /* التأكد من أن العناصر لا تنكمش */
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  display: inline-block;
+  white-space: nowrap; /* منع النصوص الطويلة من التمدد */
+}
+.navigation ul li a:hover{
+    color: gold;
+}
+/* تحسين شريط التمرير */
+.navigation::-webkit-scrollbar {
+  height: 8px; /* ارتفاع شريط التمرير */
+}
+
+.navigation::-webkit-scrollbar-thumb {
+
+  border-radius: 4px;
+}
+.navigation .main-nav-color a{
+    color: gold;
+}
+section {
+    padding: 100px 200px;
+}
+
+.main{
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/paneer1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: gold;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight:700 ;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: goldenrod;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1.7s ease;
+}
+
+.main-btn:hover{
+    background-color: gold;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: goldenrod;
+    font-size: 1.5em;
+    padding-right: 30px;
+    
+}
+.social-icons a:hover{
+    color: gold;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:goldenrod ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    background-color: #000;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding:25px ;
+    margin: 15px;
+    transition: 1.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon {
+    color: gold;
+    font-size: 8em;
+    text-align: center;
+    
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    color: goldenrod;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info h4{
+    color: gold;
+}
+.info p{
+    color:gold ;
+}
+
+.prices-mune {
+    margin-bottom: 100px;
+    width: 100%;
+}
+details {
+    color: yellow;
+    z-index: 999;   
+}
+
+summary {
+  cursor: pointer; /* يجعل الماوس على شكل يد عند المرور */
+  padding: 5px;
+  color: yellowgreen ;
+  list-style: none;
+
+}
+summary span {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 6px;
+}
+details pre {
+    font-size: 20px;
+}
+.prices{
+    background-color: #000;
+}
+.prices .content{
+    margin-top: 30px;
+}
+.prices-card{
+    background-color: gold;
+    border: 1px solid gold;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px ;
+    transition: 0.7s ease;
+    
+}
+.prices-card p,span{
+    font-size: 20px;
+}
+.prices-card:hover{
+    transform: scale(1.1);
+}
+
+.prices-image img{
+    width: 100%;
+    
+}
+
+
+.prices-card:hover .prices-image{
+    opacity: 0.9;
+}
+
+.prices-info{
+    padding: 1em;
+    
+}
+
+.prices-category{
+    font-size: 0.8em ;
+    color: #000;
+    
+}
+
+.prices-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    
+}
+
+
+.more-details {
+    text-decoration: none;    
+    color: #a400ff;
+}
+
+.more-details:hover{
+    color: #1100ff;
+}
+
+.contact .icon{
+
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    
+    color: gold;
+    
+}
+
+.contact .info p {
+     font-size: 1.2em ;
+    
+}
+.info h4 {
+    font-size: 30px;
+}
+.footer {
+    width:100% ;
+ 
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer h1{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: gold;
+    padding-top: 15px;
+}
+
+
+.footer-title span{
+    color: goldenrod;
+}
+
+.footer-sit  {
+   color:#363636 ;
+   background-color:#ff000a ;
+   text-align: center;
+   font-size: 30px;
+}
+.footer a{
+    
+    color: #fff;    
+    font-size: 30px;
+}
+@media(max-width:1023px){
+    
+    header {
+        padding: 20px 12px;
+    }
+    
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    
+    section {
+        padding: 80px 20px;
+    }
+    
+    .min-content h2{
+        font-size: 1em;
+    }
+    
+    .min-content h3{
+        font-size: 1.6em;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+}
+.orders {
+    background-color: #000;
+    color: white;
+    padding: 80px 200px;
+    border-top: 1px solid goldenrod;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: gold;
+}
+
+.price-display {
+    font-size: 0.9em;
+    color: goldenrod;
+    margin-top: 5px;
+    display: block;
+}
+
+.order-list {
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+}
+
+.order-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-list li {
+    background-color: #000;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.order-list li:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.order-list li button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.order-list li button:hover {
+    color: black;
+}
+@media(max-width:641px){
+
+    body {
+        font-size: 12px;
+    }
+   .min-content h2{
+        font-size: 0.8em;
+    }
+    
+   .min-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width:320px){
+
+    body {
+        font-size: 11px;
+    }
+   .min-content h2{
+        font-size: 0.7em;
+    }
+    
+   .min-content h3{
+        font-size: 1.2em;
+    }
+}
+
+/* للأجهزة اللوحية (أقل من 768px) */
+@media (max-width: 768px) {
+    .orders {
+        padding: 40px 30px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .form-group textarea {
+        height: 80px;
+    }
+
+    .order-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .order-list li button {
+        font-size: 0.9em;
+    }
+}
+
+/* الهواتف المتوسطة (أقل من 640px) */
+@media (max-width: 640px) {
+    .orders {
+        padding: 30px 20px;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .form-group textarea {
+        height: 70px;
+    }
+
+    .order-list li {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .order-list li button {
+        font-size: 0.8em;
+    }
+}
+
+/* الهواتف الصغيرة (أقل من 480px) */
+@media (max-width: 480px) {
+    .orders {
+        padding: 20px 15px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .form-group label {
+        font-size: 0.8em;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 0.7em;
+        padding: 5px;
+    }
+
+    .form-group textarea {
+        height: 60px;
+    }
+
+    .order-list li {
+        padding: 6px;
+    }
+
+    .order-list li button {
+        font-size: 0.7em;
+    }
+}
+
+/* الهواتف الصغيرة جدًا (أقل من 320px) */
+@media (max-width: 320px) {
+    .orders {
+        padding: 10px 10px;
+    }
+
+    .form-group label {
+        font-size: 0.7em;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 0.6em;
+        padding: 4px;
+    }
+
+    .form-group textarea {
+        height: 50px;
+    }
+
+    .order-list li {
+        padding: 5px;
+    }
+
+    .order-list li button {
+        font-size: 0.6em;
+    }
+}
+
+
+
