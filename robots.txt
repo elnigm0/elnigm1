@@ -1,4 +1,33 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
 
+# SEO directives
 Sitemap: https://elnigm0.github.io/elnigm1/sitemap.xml
+
+# Crawl delay (requests per second)
+Crawl-delay: 2
+
+# Preferred host
+Host: https://elnigm0.github.io
+
+# Allow all robots to index all pages
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
